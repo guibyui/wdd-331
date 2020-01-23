@@ -1,0 +1,59 @@
+/* 
+1-
+2-
+3-
+4-
+5-
+6- fieldset:nth-child(1)
+7- a and c
+8- input:invalid
+9- input:invalid:required
+10- b
+11- 
+12- 
+13- 
+ */
+
+form >p {
+   /* background-color: brown; */
+}
+
+form p{
+   /* background-color: aquamarine; */
+}
+
+span help {
+   /* background-color: red; */
+}
+
+span.help {
+   /* background-color: burlywood; */
+}
+
+p + fieldset{
+   /* background-color: chocolate; */
+}
+
+fieldset:nth-child(1) {
+   /* background-color: cornflowerblue; */
+}
+
+fieldset:first-of-type {
+   /* background-color: darkblue; */
+}
+
+fieldset:not(:first-of-type) {
+   /* background-color: darkblue; */
+}
+
+input:invalid {
+
+}
+
+input:invalid:required {
+
+}
+
+[title*=fieldset] {
+   background-color: darkgrey;
+}
