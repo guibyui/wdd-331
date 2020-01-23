@@ -1,6 +1,8 @@
 // How to center a block?
 // We set a width on a block because the default is 100%
 
+$break-small: 20em;
+
 //colors
 $body-background-color: darkred;
 $form-background-color: white;
@@ -13,8 +15,16 @@ body {
 
 #contactform {
    background-color: $form-background-color;
-}
-#contactform input, #contactform textarea {
-   background-color: $input-color;
-}
-
+   input, textarea {
+       background-color: $input-color;
+       flex: 2;
+   }
+   @media (min-width: $break-small) {
+      & {
+         width: 90%;
+         max-width: 700px;
+         margin-left: auto;
+         margin-right: auto; 
+       } 
+   }
+}   
