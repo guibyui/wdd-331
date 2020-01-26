@@ -20,7 +20,7 @@ p + fieldset{
 }
 
 fieldset:nth-child(1) {
-   /* background-color: cornflowerblue; */
+   background-color: cornflowerblue;
 }
 
 fieldset:first-of-type {
@@ -40,5 +40,5 @@ input:invalid:required {
 }
 
 [title*=fieldset] {
-   background-color: darkgrey;
+   /* background-color: darkgrey; */
 }
