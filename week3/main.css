@@ -1,5 +1,6 @@
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 img {
@@ -41,6 +42,7 @@ header {
   height: auto;
   padding: 2em;
 }
+
 @media (min-width: 60em) {
   header {
     width: 17em;
@@ -64,13 +66,16 @@ header > h1 > a:visited {
 nav ul {
   list-style-type: none;
 }
+
 nav li {
   margin: 1em 0;
 }
+
 nav a:hover {
   color: white;
   text-decoration: underline;
 }
+
 nav a:active {
   color: #deb887;
 }
@@ -81,11 +86,13 @@ nav a:visited {
 }
 
 main {
+  background: -webkit-gradient(linear, left top, left bottom, from(#faebd7), to(white));
   background: linear-gradient(#faebd7, white);
   margin-left: 0;
   height: 100%;
   margin-left: 17em;
 }
+
 @media (min-width: 60em) {
   main {
     margin-left: 17em;
@@ -98,12 +105,14 @@ article {
   margin: 2em auto;
   padding: 2em;
   border: 1px solid #f0f0f0;
-  box-shadow: 3px 3px 3px #d0d0d0;
+  -webkit-box-shadow: 3px 3px 3px #d0d0d0;
+          box-shadow: 3px 3px 3px #d0d0d0;
   width: 80%;
   max-width: 800px;
   margin: 3em auto;
   padding: 3em;
 }
+
 @media (min-width: 60em) {
   article {
     width: 80%;
@@ -112,21 +121,26 @@ article {
     padding: 3em;
   }
 }
+
 article a:hover {
   text-decoration: underline;
 }
+
 article a:active {
   color: #deb887;
 }
+
 article h2 {
   margin-top: 0.3em;
   margin-bottom: 2.5em;
   font-size: 1.8em;
 }
+
 article h2 a:hover {
   color: #6495ed;
   text-decoration: underline;
 }
+
 article h2 a:active {
   color: #deb887;
 }
@@ -144,9 +158,11 @@ article h2 a:visited {
 figure {
   text-align: center;
 }
+
 figure img {
   width: 100%;
 }
+
 @media (min-width: 60em) {
   figure img {
     width: 60%;
@@ -161,5 +177,4 @@ figure img {
   font-family: Helvetica, Arial, sans-serif;
   font-weight: normal;
 }
-
 /*# sourceMappingURL=main.css.map */

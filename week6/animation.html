@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Creating SVGs</title>
+   <style>
+      svg {
+         border-radius: 50% / 100% 100% 0 0;
+         animation: .5s silly infinite alternate;
+
+      }
+      @keyframes silly { to {
+            border-radius: 50%; bottom: 100px;
+         }}
+   </style>
+</head>
+<body>
+   <svg class="mr-border-radius" wigth="250" height="250">
+      <circle r="125" cx="125" cy="125"/>
+   </svg>   
+</body>
+</html>
