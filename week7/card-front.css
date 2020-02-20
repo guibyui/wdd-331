@@ -8,7 +8,7 @@
   padding: 0;
 }
 
-.card {
+.card-size {
   border: 1px solid grey;
   height: 56vw;
   width: 40vw;
@@ -27,17 +27,17 @@
   height: 8vw;
 }
 
-.number {
+.numbers {
   text-align: center;
   font-size: 4vw;
 }
 
-.number > .icon {
+.numbers > .icon {
   width: 4vw;
   height: 4vw;
 }
 
-.rotate {
+.rotation {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }

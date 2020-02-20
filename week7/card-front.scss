@@ -14,7 +14,7 @@ $icon-size: $card-width / 5;
 }
 
 //styles to draw a basic outline of a card
-.card {
+.card-size {
     border: 1px solid grey;
     height: $card-height;
     width: $card-width;
@@ -34,7 +34,7 @@ $icon-size: $card-width / 5;
     height: $icon-size;
 }
 
-.number {
+.numbers {
     text-align: center;
     font-size: $font-size-number;
     & > .icon {
@@ -44,7 +44,7 @@ $icon-size: $card-width / 5;
 }
 
 //rotate bottom pips 180deg
-.rotate {
+.rotation {
     transform: rotate(180deg);
 }
 
