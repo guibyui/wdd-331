@@ -1,7 +1,5 @@
 /* -------------------------------- 
-
 xBackground 
-
 -------------------------------- */
 body {
   /* this is the page background */
@@ -9,9 +7,7 @@ body {
 }
 
 /* -------------------------------- 
-
 xPatterns
-
 -------------------------------- */
 .cd-box {
   /* this is the container of various design elements - i.e. the 2 logo of the branding section */
@@ -23,9 +19,7 @@ xPatterns
 }
 
 /* -------------------------------- 
-
 xNavigation 
-
 -------------------------------- */
 header {
   background-color: #19191a;
@@ -99,9 +93,7 @@ header {
 }
 
 /* -------------------------------- 
-
 xPage title 
-
 -------------------------------- */
 main > h1 {
   color: #19191a;
@@ -114,9 +106,7 @@ main > h1 {
 }
 
 /* -------------------------------- 
-
 xTypography 
-
 -------------------------------- */
 h1, h2 {
   font-family: "Open Sans", sans-serif;
@@ -174,9 +164,7 @@ p a {
 }
 
 /* -------------------------------- 
-
 xButtons 
-
 -------------------------------- */
 .btn {
   border: none;
@@ -228,9 +216,7 @@ xButtons
 }
 
 /* -------------------------------- 
-
 xIcons 
-
 -------------------------------- */
 .cd-icons li {
   /* icons size */
@@ -239,9 +225,7 @@ xIcons
 }
 
 /* -------------------------------- 
-
 xForm 
-
 -------------------------------- */
 input[type=text], select {
   border: 1px solid #e6e6e6;
@@ -367,9 +351,7 @@ select {
 }
 
 /* -------------------------------- 
-
 xBasic style
-
 -------------------------------- */
 *, *::after, *::before {
   -webkit-box-sizing: border-box;

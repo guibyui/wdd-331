@@ -1,0 +1,58 @@
+* {
+   font-family: 'Dekko', 'Times New Roman', Times, serif;
+}
+
+body {
+   color: rgb(0, 0, 0);
+   /* margin-top: 7rem; */
+}
+
+header {
+   background-color: #7c0707;
+}
+
+img {
+   width: 173px;
+   height: auto;
+}
+
+header,
+footer,
+nav,
+main,
+footer {
+   margin: 0 auto;
+   padding: 0.75rem;
+   max-width: 45rem;
+
+}
+
+header,
+footer {
+   text-align: center;
+}
+
+
+h1 {
+   color: #ffff;
+   font-size: 3rem;
+   margin: 0.15rem;
+}
+
+h2 {
+   font-size: 1rem;
+   border-bottom: 1px solid #333;
+}
+
+ul li {
+   font-size: 1.1rem;
+}
+
+footer {
+   background-color: #7c0707;
+   text-align: center;
+   padding: 15px 0;
+   color: #ffff;
+   font-size: 20px;
+   font-weight: 600;
+}
