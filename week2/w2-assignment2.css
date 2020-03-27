@@ -1,34 +1,34 @@
 
 form >p {
-   /* background-color: brown; */
+   /* background-color: brown  */
 }
 
 form p{
-   /* background-color: aquamarine; */
+   /* background-color: aquamarine  */
 }
 
 span help {
-   /* background-color: red; */
+   /* background-color: red  */
 }
 
 span.help {
-   /* background-color: burlywood; */
+   /* background-color: burlywood  */
 }
 
 p + fieldset{
-   /* background-color: chocolate; */
+   /* background-color: chocolate  */
 }
 
 fieldset:nth-child(1) {
-   background-color: cornflowerblue;
+   background-color: cornflowerblue 
 }
 
 fieldset:first-of-type {
-   /* background-color: darkblue; */
+   /* background-color: darkblue  */
 }
 
 fieldset:not(:first-of-type) {
-   /* background-color: darkblue; */
+   /* background-color: darkblue  */
 }
 
 input:invalid {
@@ -40,5 +40,5 @@ input:invalid:required {
 }
 
 [title*=fieldset] {
-   /* background-color: darkgrey; */
+   /* background-color: darkgrey  */
 }

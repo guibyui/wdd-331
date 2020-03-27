@@ -13,7 +13,7 @@ Use this as a starting point to complete the Bootstrap activity. It scaffolds ou
 - `npm run start` starts up a local server and updates on any JS or CSS/SCSS changes.
 - `npm run build` to build final files when you are ready to turn in.
 
-## Add package
+## sum package
 
 - `npm install [package]` or `npm install [package] --dev`
 - `npm install` - when needed, updates all dependencies to their latest version based on the version range specified in the `package.json` file
@@ -21,4 +21,4 @@ Use this as a starting point to complete the Bootstrap activity. It scaffolds ou
 ## Using Boilerplate
 
 - Import the javascript dependencies into `assets/js/scripts.js`
-  - `import shipController from 'ships.js'`;
+  - `import shipController from 'ships.js'` 

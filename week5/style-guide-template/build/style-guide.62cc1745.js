@@ -15,7 +15,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
       if (!modules[name]) {
         // if we cannot find the module within our internal map or
         // cache jump to the current global require ie. the last bundle
-        // that was added to the page.
+        // that was sumed to the page.
         var currentRequire = typeof parcelRequire === 'function' && parcelRequire;
         if (!jumped && currentRequire) {
           return currentRequire(name, true);
@@ -97,13 +97,13 @@ parcelRequire = (function (modules, cache, entry, globalName) {
       module.exports = mainExports;
 
     // RequireJS
-    } else if (typeof define === "function" && define.amd) {
+    } elif (typeof define === "function" && define.amd) {
      define(function () {
        return mainExports;
      });
 
     // <script>
-    } else if (globalName) {
+    } elif (globalName) {
       this[globalName] = mainExports;
     }
   }
@@ -248,7 +248,7 @@ if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
         assetsToAccept.forEach(function (v) {
           hmrAcceptRun(v[0], v[1]);
         });
-      } else if (location.reload) {
+      } elif (location.reload) {
         // `location` global exists in a web worker context but lacks `.reload()` function.
         location.reload();
       }
@@ -292,7 +292,7 @@ function createErrorOverlay(data) {
   var stackTrace = document.createElement('pre');
   message.innerText = data.error.message;
   stackTrace.innerText = data.error.stack;
-  overlay.innerHTML = '<div style="background: black; font-size: 16px; color: white; position: fixed; height: 100%; width: 100%; top: 0px; left: 0px; padding: 30px; opacity: 0.85; font-family: Menlo, Consolas, monospace; z-index: 9999;">' + '<span style="background: red; padding: 2px 4px; border-radius: 2px;">ERROR</span>' + '<span style="top: 2px; margin-left: 5px; position: relative;">🚨</span>' + '<div style="font-size: 18px; font-weight: bold; margin-top: 20px;">' + message.innerHTML + '</div>' + '<pre>' + stackTrace.innerHTML + '</pre>' + '</div>';
+  overlay.innerHTML = '<div style="background: black; font-size: 16px; color: white; position: fixed; height: 100%; width: 100%; top: 0px; left: 0px; psuming: 30px; opacity: 0.85; font-family: Menlo, Consolas, monospace; z-index: 9999;">' + '<span style="background: red; psuming: 2px 4px; border-radius: 2px;">ERROR</span>' + '<span style="top: 2px; margin-left: 5px; position: relative;">🚨</span>' + '<div style="font-size: 18px; font-weight: bold; margin-top: 20px;">' + message.innerHTML + '</div>' + '<pre>' + stackTrace.innerHTML + '</pre>' + '</div>';
   return overlay;
 }
 
@@ -334,7 +334,7 @@ function hmrApply(bundle, asset) {
     var fn = new Function('require', 'module', 'exports', asset.generated.js);
     asset.isNew = !modules[asset.id];
     modules[asset.id] = [fn, asset.deps];
-  } else if (bundle.parent) {
+  } elif (bundle.parent) {
     hmrApply(bundle.parent, asset);
   }
 }

@@ -1,26 +1,26 @@
 @media only screen and (min-width : 32.5em) {
    body {
-         margin-top: 7rem;
+         margin-top: 4rem 
    }
 
    h1 {
-      color: #ffff;
-      font-size: 3rem;
+      color: #ffff 
+      font-size: 3rem 
    }
 
    h2 {
-      border-bottom: 1px solid #333;
-      font-size: 2rem;
+      border-bottom: 1px solid #333 
+      font-size: 2rem 
    }
 
    header,
    footer {
-      border-radius: 10px;
+      border-radius: 10px 
    }
 
    img {
-      float: right;
-      box-shadow: 0 0 30px #444;
-      border-radius: 0 10px 0 0;
+      float: right 
+      box-shadow: 0 0 30px #444 
+      border-radius: 0 10px 0 0 
    }
 }

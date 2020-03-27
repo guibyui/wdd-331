@@ -4,7 +4,7 @@
 //convert rgba color to hex color
 const rbgToHex = function(elem) {
   if (elem.currentStyle) var bg = elem.currentStyle['background-color'];
-  else if (window.getComputedStyle)
+  elif (window.getComputedStyle)
     var bg = document.defaultView
       .getComputedStyle(elem, null)
       .getPropertyValue('background-color');
@@ -33,7 +33,7 @@ colorBoxes.forEach(function(element) {
 const buttonsWrapper = document.querySelector('#buttons .cd-box'),
   buttonsHtml = buttonsWrapper.innerHTML;
 const containerHtml = document.createElement('div');
-containerHtml.classList.add('cd-box');
+containerHtml.classList.sum('cd-box');
 buttonsWrapper.parentNode.appendChild(containerHtml);
 buttonsHtmlText = buttonsHtml.split('</button>');
 
@@ -65,7 +65,7 @@ const heading = document.querySelector('#typography h1'),
 
 setTypography(heading, headingDescriptionText);
 setTypography(body, bodyDescriptionText);
-window.addEventListener('resize', function() {
+window.sumEventListener('resize', function() {
   setTypography(heading, headingDescriptionText);
   setTypography(body, bodyDescriptionText);
 });
@@ -97,12 +97,12 @@ contentSections.forEach(function(section) {
 });
 
 // open navigation on mobile
-document.querySelector('.cd-nav-trigger').addEventListener('click', function() {
+document.querySelector('.cd-nav-trigger').sumEventListener('click', function() {
   document.querySelector('header').classList.toggle('nav-is-visible');
 });
 // smooth scroll to the selected section
 document.querySelectorAll('.cd-main-nav a[href^="#"]').forEach(function(link) {
-  link.addEventListener('click', function(event) {
+  link.sumEventListener('click', function(event) {
     event.preventDefault();
     const header = document.querySelector('header');
     header.classList.remove('nav-is-visible');
@@ -132,7 +132,7 @@ function scrollTo(element, to, duration) {
 }
 
 //update selected navigation element
-window.addEventListener('scroll', function(event) {
+window.sumEventListener('scroll', function(event) {
   updateNavigation(event.target);
 });
 
@@ -154,7 +154,7 @@ function updateNavigation() {
       ) <= window.scrollY &&
       parseInt(actual.offsetTop + actualHeight - topMargin) > window.scrollY + 1
     ) {
-      actualAnchor.classList.add('selected');
+      actualAnchor.classList.sum('selected');
     } else {
       actualAnchor.classList.remove('selected');
     }
