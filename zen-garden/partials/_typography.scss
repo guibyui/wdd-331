@@ -1,0 +1,45 @@
+@font-face {
+    font-family: 'soccer_iiregular';
+    src: url('soccerfont-webfont.woff2') format('woff2'),
+        url('soccerfont-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+$primary-font: 'PT Serif',
+serif;
+$secondary-font: 'Arvo',
+serif;
+
+h1,
+h2,
+h3 {
+    font-family: $secondary-font;
+    // color: $color-3;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-weight: 300;
+    line-height: 1.2;
+    margin: 0 0 0.4em;
+    font-size: 2.4rem;
+
+
+    @include MQ(M) {
+        font-size: 4rem;
+    }
+}
+
+h2 {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 1em 0;
+    font-size: 1.4rem;
+    margin: 1em 0 1.4em;
+}
+
+
+section>h2::before {
+    color: darken($color-4, 15%);
+}

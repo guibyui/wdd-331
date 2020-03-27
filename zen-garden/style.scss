@@ -1,0 +1,428 @@
+@import 'partials/layout';
+@import 'partials/colors';
+@import 'partials/typography';
+@import 'partials/basic-style';
+
+
+body {
+    background-color: $color-2;
+    color: white;
+    max-width: 95%;
+    margin: 0 auto;
+    background: #fff url(./background.jpg);
+    background-size: 100% auto;
+    background-repeat: repeat;
+
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    }
+}
+
+header {
+    background-color: black;
+    text-align-last: center;
+    padding: 7px;
+    width: 100%;
+    border-radius: 15px 50px;
+
+    & h1 {
+        color: $color-2;
+    }
+
+    & h2 {
+        color: $color-1;
+    }
+
+    &::after {
+        content: 'Thompson';
+        font-size: 45px;
+        font-family: "soccer_iiregular";
+        color: $color-3;
+        margin-top: 10px;
+    }
+}
+
+.intro {
+    margin-bottom: 10px;
+}
+
+.supporting {
+    display: grid;
+}
+
+.summary {
+    text-align: center;
+    color: white;
+    font-style: italic;
+    margin-top: 10px;
+
+
+    &::before {
+        content: '';
+        display: block;
+        margin: auto;
+        height: 150px;
+        width: 150px;
+        background-image: url(data:image/svg+xml,%3Csvg%20width%3D%27150%27%20height%3D%27150%27%20viewBox%3D%27-105%20-105%20210%20210%27%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20xmlns%3Axlink%3D%27http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%27%3E%0A%20%20%20%3Cdefs%3E%0A%20%20%20%20%20%20%3CclipPath%20id%3D%27ball%27%3E%0A%20%20%20%20%20%20%20%20%20%3Ccircle%20r%3D%27100%27%20stroke-width%3D%270%27%2F%3E%0A%20%20%20%20%20%20%3C%2FclipPath%3E%0A%20%20%20%20%20%20%3CradialGradient%20id%3D%27shadow1%27%20cx%3D%27.4%27%20cy%3D%27.3%27%20r%3D%27.8%27%3E%0A%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%270%27%20stop-color%3D%27white%27%20stop-opacity%3D%271%27%2F%3E%0A%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%27.4%27%20stop-color%3D%27white%27%20stop-opacity%3D%271%27%2F%3E%0A%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%27.8%27%20stop-color%3D%27%23EEEEEE%27%20stop-opacity%3D%271%27%2F%3E%0A%20%20%20%20%20%20%3C%2FradialGradient%3E%0A%20%20%20%20%20%20%3CradialGradient%20id%3D%27shadow2%27%20cx%3D%27.5%27%20cy%3D%27.5%27%20r%3D%27.5%27%3E%0A%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%270%27%20stop-color%3D%27white%27%20stop-opacity%3D%270%27%2F%3E%0A%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%27.8%27%20stop-color%3D%27white%27%20stop-opacity%3D%270%27%2F%3E%0A%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%27.99%27%20stop-color%3D%27black%27%20stop-opacity%3D%27.3%27%2F%3E%0A%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%271%27%20stop-color%3D%27black%27%20stop-opacity%3D%271%27%2F%3E%0A%20%20%20%20%20%20%3C%2FradialGradient%3E%0A%20%20%20%20%20%20%3Cg%20id%3D%27black_stuff%27%20stroke-linejoin%3D%27round%27%20clip-path%3D%27url%28%23ball%29%27%3E%0A%20%20%20%20%20%20%20%20%20%3Cg%20fill%3D%27black%27%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cpath%20d%3D%27M%206%2C-32%20Q%2026%2C-28%2046%2C-19%20Q%2057%2C-35%2064%2C-47%20Q%2050%2C-68%2037%2C-76%20Q%2017%2C-75%201%2C-68%20Q%204%2C-51%206%2C-32%27%2F%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cpath%20d%3D%27M%20-26%2C-2%20Q%20-45%2C-8%20-62%2C-11%20Q%20-74%2C5%20-76%2C22%20Q%20-69%2C40%20-50%2C54%20Q%20-32%2C47%20-17%2C39%20Q%20-23%2C15%20-26%2C-2%27%2F%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cpath%20d%3D%27M%20-95%2C22%20Q%20-102%2C12%20-102%2C-8%20V%2080%20H%20-85%20Q%20-95%2C45%20-95%2C22%27%2F%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cpath%20d%3D%27M%2055%2C24%20Q%2041%2C41%2024%2C52%20Q%2028%2C65%2031%2C79%20Q%2055%2C78%2068%2C67%20Q%2078%2C50%2080%2C35%20Q%2065%2C28%2055%2C24%27%2F%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cpath%20d%3D%27M%200%2C120%20L%20-3%2C95%20Q%20-25%2C93%20-42%2C82%20Q%20-50%2C84%20-60%2C81%27%2F%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cpath%20d%3D%27M%20-90%2C-48%20Q%20-80%2C-52%20-68%2C-49%20Q%20-52%2C-71%20-35%2C-77%20Q%20-35%2C-100%20-40%2C-100%20H%20-100%27%2F%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cpath%20d%3D%27M%20100%2C-55%20L%2087%2C-37%20Q%2098%2C-10%2097%2C5%20L%20100%2C6%27%2F%3E%0A%20%20%20%20%20%20%20%20%20%3C%2Fg%3E%0A%20%20%20%20%20%20%20%20%20%3Cg%20fill%3D%27none%27%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cpath%20d%3D%27M%206%2C-32%20Q%20-18%2C-12%20-26%2C-2%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20M%2046%2C-19%20Q%2054%2C5%2055%2C24%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20M%2064%2C-47%20Q%2077%2C-44%2087%2C-37%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20M%2037%2C-76%20Q%2039%2C-90%2036%2C-100%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20M%201%2C-68%20Q%20-13%2C-77%20-35%2C-77%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20M%20-62%2C-11%20Q%20-67%2C-25%20-68%2C-49%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20M%20-76%2C22%20Q%20-85%2C24%20-95%2C22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20M%20-50%2C54%20Q%20-49%2C70%20-42%2C82%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20M%20-17%2C39%20Q%200%2C48%2024%2C52%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20M%2031%2C79%20Q%2020%2C92%20-3%2C95%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20M%2068%2C67%20L%2080%2C80%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20M%2080%2C35%20Q%2090%2C25%2097%2C5%0A%20%20%20%20%20%20%20%20%20%20%20%20%27%2F%3E%0A%20%20%20%20%20%20%20%20%20%3C%2Fg%3E%0A%20%20%20%20%20%20%3C%2Fg%3E%0A%20%20%20%3C%2Fdefs%3E%0A%20%20%20%3Ccircle%20r%3D%27100%27%20fill%3D%27white%27%20stroke%3D%27none%27%2F%3E%0A%20%20%20%3Ccircle%20r%3D%27100%27%20fill%3D%27url%28%23shadow1%29%27%20stroke%3D%27none%27%2F%3E%0A%20%20%20%3Cg%3E%3CanimateTransform%20attributeName%3D%27transform%27%20type%3D%27rotate%27%20from%3D%270%27%20to%3D%27360%27%20begin%3D%270s%27%20dur%3D%273s%27%20repeatCount%3D%27indefinite%27%2F%3E%0A%20%20%20%20%20%20%3Cuse%20xlink%3Ahref%3D%27%23black_stuff%27%20stroke%3D%27%23EEE%27%20stroke-width%3D%277%27%2F%3E%0A%20%20%20%20%20%20%3Cuse%20xlink%3Ahref%3D%27%23black_stuff%27%20stroke%3D%27%23DDD%27%20stroke-width%3D%274%27%2F%3E%0A%20%20%20%20%20%20%3Cuse%20xlink%3Ahref%3D%27%23black_stuff%27%20stroke%3D%27%23999%27%20stroke-width%3D%272%27%2F%3E%0A%20%20%20%20%20%20%3Cuse%20xlink%3Ahref%3D%27%23black_stuff%27%20stroke%3D%27black%27%20stroke-width%3D%271%27%2F%3E%0A%20%20%20%3C%2Fg%3E%0A%20%20%20%3Ccircle%20r%3D%27100%27%20fill%3D%27url%28%23shadow2%29%27%20stroke%3D%27none%27%2F%3E%0A%3C%2Fsvg%3E);
+    }
+}
+
+.preamble h3::before,
+.preamble h3::after {
+    content: ' y ';
+    font-size: 25px;
+    font-family: "soccer_iiregular";
+}
+
+.preamble {
+    background: $color-1;
+    color: $color-2;
+    display: table-cell;
+    font-size: 12px;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 100px / 50px;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+    animation: orbit 2s linear;
+}
+
+.explanation {
+    background-color: $color-3;
+    display: table-cell;
+    font-size: 12px;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 100px / 50px;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+    animation: orbit2 2s linear;
+    margin-bottom: 10px;
+}
+
+.participation {
+    background-color: $color-1;
+    color: $color-2;
+    display: table-cell;
+    font-size: 12px;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 100px / 50px;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+    animation: orbit 2s linear;
+    margin-bottom: 10px;
+}
+
+.benefits {
+    background-color: $color-3;
+    display: table-cell;
+    font-size: 12px;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 100px / 50px;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+    animation: orbit2 2s linear;
+    margin-bottom: 10px;
+}
+
+.requirements {
+    background-color: $color-1;
+    color: $color-2;
+    display: table-cell;
+    font-size: 12px;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 100px / 50px;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+    animation: orbit 2s linear;
+}
+
+footer {
+    background-color: white;
+    color: black;
+    margin: 10px;
+    border-radius: 100px / 50px;
+    height: 30px;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.design-selection {
+    display: table-cell;
+    font-size: 12px;
+    text-align: center;
+    vertical-align: middle;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+    animation: orbit2 2s linear;
+    grid-column: 1 / 3;
+}
+
+.design-archives {
+    display: table-cell;
+    font-size: 12px;
+    text-align: center;
+    vertical-align: middle;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+    animation: orbit 2s linear;
+    grid-template-columns: 1;
+    grid-row: 2;
+}
+
+.zen-resources {
+    display: table-cell;
+    font-size: 12px;
+    text-align: center;
+    vertical-align: middle;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+    animation: orbit2 2s linear;
+    grid-template-columns: 2;
+    grid-row: 2;
+}
+
+.wrapper {
+    display: grid;
+    background: #ffffff;
+    background: -moz-radial-gradient(center, ellipse cover, #ffffff 0%, #3474b5 100%);
+    background: -webkit-radial-gradient(center, ellipse cover, #ffffff 0%, #3474b5 100%);
+    background: radial-gradient(ellipse at center, #ffffff 0%, #3474b5 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#3474b5', GradientType=1);
+    color: black;
+    border-radius: 100px / 50px;
+}
+
+@include MQ(M) {
+    body {
+        // background-color: black;
+    }
+
+    .preamble {
+        border-radius: 100%;
+        width: 350px;
+        height: 350px;
+        animation: preamble 30s linear infinite;
+    }
+
+    .requirements {
+        border-radius: 100%;
+        width: 555px;
+        height: 555px;
+        padding: 4rem;
+        position: absolute;
+        animation: requirements 30s linear infinite;
+    }
+
+    .benefits {
+        border-radius: 100%;
+        width: 220px;
+        height: 220px;
+        padding: 1rem;
+        animation: benefits 30s linear infinite;
+    }
+
+    .participation {
+        border-radius: 50%;
+        width: 380px;
+        height: 380px;
+        padding: 2.5rem;
+        padding-top: 1rem;
+        animation: participation 30s linear infinite;
+    }
+
+    .explanation {
+        border-radius: 50%;
+        width: 340px;
+        height: 340px;
+        padding: 2rem;
+        padding-top: 1rem;
+        animation: explanation 30s linear infinite;
+    }
+
+    .wrapper {
+        background: none;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .design-archives,
+    .zen-resources,
+    .design-selection {
+        background: #ffffff;
+        background: -moz-radial-gradient(center, ellipse cover, #ffffff 0%, #3474b5 100%);
+        background: -webkit-radial-gradient(center, ellipse cover, #ffffff 0%, #3474b5 100%);
+        background: radial-gradient(ellipse at center, #ffffff 0%, #3474b5 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#3474b5', GradientType=1);
+        border-radius: 100%;
+    }
+
+    .design-selection {
+        animation: selection 2s linear;
+        width: 240px;
+        height: 240px;
+        padding: 2rem;
+        padding-top: 1rem;
+    }
+
+    .design-archives {
+        animation: archives 2s linear;
+        width: 150px;
+        height: 150px;
+        padding: 2rem;
+        padding-top: 1rem;
+    }
+
+    .zen-resources {
+        animation: resources 2s linear;
+        width: 200px;
+        height: 200px;
+        padding: 2rem;
+        padding-top: 1rem;
+    }
+}
+
+@keyframes orbit {
+    0% {
+        transform: translate(85vw, 0);
+    }
+
+    100% {
+        transform: translate(0vw, 0);
+    }
+}
+
+@keyframes orbit2 {
+    0% {
+        transform: translate(-85vw, 0);
+    }
+
+    100% {
+        transform: translate(0vw, 0);
+    }
+}
+
+@keyframes preamble {
+    0% {
+        transform: translate(40vw, 0vw);
+    }
+
+    // 10% {transform: translate(25vw, 0);}
+    // 20% {transform: translate(20vw, 0);}
+    // 30% {transform: translate(25vw, 0);}
+    // 40% {transform: translate(20vw, 0);}
+    50% {
+        transform: translate(0vw, 0vw);
+    }
+
+    // 60% {transform: translate(20vw, 0);}
+    // 70% {transform: translate(25vw, 0);}
+    // 80% {transform: translate(20vw, 0);}
+    // 90% {transform: translate(25vw, 0);}
+    100% {
+        transform: translate(40vw, 0vw);
+    }
+}
+
+@keyframes explanation {
+    0% {
+        transform: translate(70vw, 20vw);
+    }
+
+    // 10% {transform: translate(25vw, 0);}
+    // 20% {transform: translate(20vw, 0);}
+    // 33% {transform: translate(25vw, 0);}
+    // 40% {transform: translate(20vw, 0);}
+    50% {
+        transform: translate(70vw, -30vw);
+    }
+
+    // 60% {transform: translate(20vw, 0);}
+    // 66% {transform: translate(25vw, 0);}
+    // 80% {transform: translate(20vw, 0);}
+    // 90% {transform: translate(25vw, 0);}
+    100% {
+        transform: translate(70vw, 20vw);
+    }
+}
+
+
+@keyframes participation {
+    0% {
+        transform: translate(0vw, -24vw);
+    }
+
+    // 10% {transform: translate(25vw, 0);}
+    // 20% {transform: translate(20vw, 0);}
+    // 30% {transform: translate(25vw, 0);}
+    // 40% {transform: translate(20vw, 0);}
+    50% {
+        transform: translate(70vw, -24vw);
+    }
+
+    // 60% {transform: translate(20vw, 0);}
+    // 70% {transform: translate(25vw, 0);}
+    // 80% {transform: translate(20vw, 0);}
+    // 90% {transform: translate(25vw, 0);}
+    100% {
+        transform: translate(0vw, -24vw);
+    }
+}
+
+@keyframes benefits {
+    0% {
+        transform: translate(0vw, -80vw);
+    }
+
+    // 10% {transform: translate(25vw, 0);}
+    // 20% {transform: translate(20vw, 0);}
+    // 30% {transform: translate(25vw, 0);}
+    // 40% {transform: translate(20vw, 0);}
+    50% {
+        transform: translate(0vw, -30vw);
+    }
+
+    // 60% {transform: translate(20vw, 0);}
+    // 70% {transform: translate(25vw, 0);}
+    // 80% {transform: translate(20vw, 0);}
+    // 90% {transform: translate(25vw, 0);}
+    100% {
+        transform: translate(0vw, -80vw);
+    }
+}
+
+@keyframes requirements {
+    0% {
+        transform: translate(35vw, 28vw);
+    }
+
+    // 10% {transform: translate(25vw, 0);}
+    // 20% {transform: translate(20vw, 0);}
+    // 30% {transform: translate(25vw, 0);}
+    // 40% {transform: translate(20vw, 0);}
+    50% {
+        transform: translate(15vw, 28vw);
+    }
+
+    // 60% {transform: translate(20vw, 0);}
+    // 70% {transform: translate(25vw, 0);}
+    // 80% {transform: translate(20vw, 0);}
+    // 90% {transform: translate(25vw, 0);}
+    100% {
+        transform: translate(35vw, 28vw);
+    }
+}
