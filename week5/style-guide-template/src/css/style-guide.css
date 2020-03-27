@@ -15,7 +15,7 @@ xPatterns
   border-radius: 3px;
   background: #ffffff;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
-  padding: 6px;
+  psuming: 6px;
 }
 
 /* -------------------------------- 
@@ -173,7 +173,7 @@ xButtons
   font-size: 1.4rem;
   font-family: "Open Sans", sans-serif;
   color: #ffffff;
-  padding: .6em 2.2em;
+  psuming: .6em 2.2em;
   cursor: pointer;
   background: #5f8ee4;
 }
@@ -237,7 +237,7 @@ input[type=text]:focus, select:focus {
 }
 
 input[type=text] {
-  padding: .6em 1em;
+  psuming: .6em 1em;
   box-shadow: inset 1px 1px rgba(0, 0, 0, 0.03);
 }
 input[type=text].success {
@@ -259,13 +259,13 @@ input[type=checkbox] {
   left: 0;
   top: 0;
   margin: 0;
-  padding: 0;
+  psuming: 0;
   opacity: 0;
 }
 
 .radio-label,
 .checkbox-label {
-  padding-left: 24px;
+  psuming-left: 24px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -341,7 +341,7 @@ input[type=checkbox]:checked + label::after {
 
 select {
   position: relative;
-  padding: .6em 2em .6em 1em;
+  psuming: .6em 2em .6em 1em;
   cursor: pointer;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -498,7 +498,7 @@ header nav {
   left: 0;
   width: 100%;
   height: 100vh;
-  padding: 50px 0;
+  psuming: 50px 0;
   text-align: center;
   -webkit-transform: translateY(-100%);
   -moz-transform: translateY(-100%);
@@ -512,7 +512,7 @@ header nav {
 .cd-main-nav li a {
   display: block;
   font-size: 1.8rem;
-  padding: 1em 0;
+  psuming: 1em 0;
   border-bottom-width: 1px;
   border-style: solid;
 }
@@ -531,18 +531,18 @@ header nav {
     width: auto;
     height: 80px;
     background: transparent;
-    padding: 0 2em;
+    psuming: 0 2em;
     text-align: left;
   }
   .cd-main-nav li {
     display: table-cell;
     vertical-align: middle;
-    padding: 0 1em;
+    psuming: 0 1em;
   }
   .cd-main-nav li a {
     display: inline-block;
     font-size: 1.6rem;
-    padding: .4em .2em;
+    psuming: .4em .2em;
     border-bottom: none;
     -webkit-transition: all 0.2s;
     -moz-transition: all 0.2s;
@@ -650,7 +650,7 @@ main {
   width: 90%;
   max-width: 1024px;
   margin: 0 auto;
-  padding: 50px 0;
+  psuming: 50px 0;
 }
 main > h1 {
   text-align: center;
@@ -658,13 +658,13 @@ main > h1 {
 }
 @media only screen and (min-width: 1024px) {
   main {
-    padding-top: 80px;
+    psuming-top: 80px;
   }
 }
 @media only screen and (min-width: 1600px) {
   main {
     max-width: none;
-    padding: 120px 0 50px;
+    psuming: 120px 0 50px;
   }
   main > h1 {
     position: fixed;
@@ -730,7 +730,7 @@ section:nth-of-type(6) h2::before {
   width: 100%;
 }
 .cd-branding ul:last-of-type {
-  padding-top: .6em;
+  psuming-top: .6em;
 }
 .cd-branding ul:last-of-type li {
   display: inline-block;
@@ -786,7 +786,7 @@ section:nth-of-type(6) h2::before {
 .cd-colors .cd-color-swatch {
   position: relative;
   width: 100%;
-  padding: 50% 0;
+  psuming: 50% 0;
 }
 .cd-colors .cd-color-swatch::before, .cd-colors .cd-color-swatch::after {
   /* lighter and darker color shades of the same swatch */
@@ -804,7 +804,7 @@ section:nth-of-type(6) h2::before {
 }
 .cd-colors b {
   display: block;
-  padding: .6em 0;
+  psuming: .6em 0;
 }
 .cd-colors li:nth-of-type(1) .cd-color-swatch {
   background: #5f8ee4;
@@ -869,14 +869,14 @@ section:nth-of-type(6) h2::before {
 .cd-buttons .cd-box,
 .cd-icons .cd-box,
 .cd-form .cd-box {
-  padding: 1em;
+  psuming: 1em;
 }
 @media only screen and (min-width: 768px) {
   .cd-typography .cd-box .cd-box,
   .cd-buttons .cd-box .cd-box,
   .cd-icons .cd-box .cd-box,
   .cd-form .cd-box .cd-box {
-    padding: 2em;
+    psuming: 2em;
   }
 }
 
